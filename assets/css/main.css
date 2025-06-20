@@ -755,6 +755,32 @@ section,
   background: color-mix(in srgb, var(--accent-color) 90%, white 20%);
 }
 
+.product-top-button {
+  padding-left: 9%;
+  align-items: center;
+  justify-content: left;
+}
+
+.product-top-button .top-btn {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.product-top-button .top-btn:hover {
+  background: color-mix(in srgb, var(--accent-color) 90%, white 20%);
+}
+
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 32px;
@@ -768,6 +794,19 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+
+.social-media-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.social-media-icons img {
+  width: 120px;
+  padding: 20px;
+}
+
 .about .content h2 {
   font-weight: 700;
   font-size: 24px;
@@ -1256,6 +1295,13 @@ Articles-List Section
   justify-content: center;
 }
 
+.articles .video-player iframe {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 3px;
+  margin: 10px;
+}
+
 .articles .article-title-image {
   display: flex;
   justify-content: center;
@@ -1294,7 +1340,7 @@ Articles-List Section
   border: 3px solid #FFFFFF;
 }
 
-.articles .article-body h2 {
+.articles .article-body h1 {
   font-size: 32px;
   font-weight: 700;
   position: relative;
@@ -1310,7 +1356,7 @@ Articles-List Section
   border-radius: 5px;
 }
 
-.articles .article-body h3 {
+.articles .article-body h2 {
   font-weight: 700;
   margin: 10px 0 15px 0;
   font-size: 22px;
@@ -1334,7 +1380,7 @@ Articles-List Section
     width: 100%;
   }
 
-  .articles .article-body h2 {
+  .articles .article-body h1 {
     font-size: 20px;
     font-weight: 700;
   }
