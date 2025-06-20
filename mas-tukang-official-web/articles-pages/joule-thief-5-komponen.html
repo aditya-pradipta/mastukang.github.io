@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Cara Membuat Inverter Sederhana untuk Menyalakan Lampu Hanya Dengan 5 Komponen</title>
+  <meta name="description"
+    content="Pelajari cara membuat lampu jalan tenaga surya otomatis tanpa listrik menggunakan panel surya dan baterai lithium. Ikuti panduan lengkap dari komponen hingga pengujian!">
+  <meta name="keywords"
+    content="lampu jalan tenaga surya, lampu PJU otomatis, panel surya, baterai lithium, cara membuat lampu jalan, hemat energi, lampu otomatis">
+  <meta name="author" content="Your Name">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="../assets/img/logo.png" alt="Mas Tukang logo">
+        <!-- <h1 class="sitename">Kelly</h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../articles.html">Artikel</a></li>
+          <li><a href="../products.html">Produk</a></li>
+          <li><a href="../channels.html">Channel</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-search">
+        <a href="#" class="search-icon"><i class="bi bi-search"></i></a>
+        <div class="search-box" id="search-box" style="display: none;">
+          <input type="text" id="search-input" placeholder="Cari artikel..." />
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Articles Section -->
+    <section id="articles" class="articles section">
+
+      <div class="container">
+        <div class="article-body">
+          <article>
+            <div class="article-title">
+              <h2>Cara Membuat Inverter Sederhana untuk Menyalakan Lampu Hanya Dengan 5 Komponen</h2>
+            </div>
+
+            <div class="article-title-image">
+              <img src="../assets/img/articles/jt-5-komponen/jt-5-komponen-title-image.webp" alt="tambal-ban-tiptop">
+            </div>
+
+            <p>
+              Inverter adalah alat yang mampu menaikkan tegangan dari tegangan baterai yang hanya beberapa volt menjadi
+              ratusan volt. Dalam pikiran kita, pastinya inverter membutuhkan rangkaian yang rumit dengan banyak
+              komponen. Namun siapa yang menyangka, ada satu jenis inverter sederhana yang hanya membutuhkan 5 komponen
+              utama untuk membuatnya. Inverter ini mampu menyalakan bohlam LED 3 watt hanya dengan sebuah baterai
+              lithium 18650.
+            </p>
+            <br>
+            <p>Nah bagaimana cara membuatnya? Mas Tukang akan bahas dalam artikel ini.</p>
+
+            <br>
+
+            <h3><strong>Bagian 1:</strong> Lima Komponen Utama Untuk Membuat Inverter Sederhana
+            </h3>
+
+            <p>
+              Seperti pada judul artikel, inverter ini hanya butuh 5 komponen utama:
+            </p>
+
+            <ul>
+              <li><strong>Sepasang transistor NPN dan PNP</strong> seperti TIP41 dan TIP42, BD139 dan BD140, atau D882
+                dan B772</li>
+              <li><strong>2 buah resistor 330 Ohm</strong></li>
+              <li><strong>Sebuah induktor 10 mH.</strong> Atau bisa juga dengan membongkar lampu neon LHE dan melepas
+                trafo di dalamnya. Trafo ini hanya memiliki 1 lilitan (2 kaki), tidak ada lilitan primer, sekunder atau
+                <i>feedback</i>
+              </li>
+            </ul>
+
+            <p>Selain komponen utama, siapkan juga komponen pendukung:</p>
+            <ul>
+              <li><strong>Lampu LED</strong> yang akan dinyalakan. Karena inverter yang akan kita buat berukuran kecil,
+                maka lampu 5 watt adalah batas maksimal</li>
+              <li><strong>Fitting lampu.</strong> Sesuaikan ukuran fitting dengan lampu yang digunakan</li>
+              <li><strong>Baterai Lithium</strong> sebagai sumber tegangan. Idealnya berkapasitas 2500 mAh</li>
+              <li><strong>Modul Charger Baterai Lithium</strong> seperti <strong>TP4056</strong> atau
+                <strong>TP5000</strong>
+              </li>
+            </ul>
+
+            <div class="article-image">
+              <img src="../assets/img/articles/jt-5-komponen/tr-npn.webp" width="300px" alt="">
+              <img src="../assets/img/articles/jt-5-komponen/tr-pnp.webp" width="300px" alt="">
+              <img src="../assets/img/articles/jt-5-komponen/r-330.webp" width="300px" alt="">
+              <img src="../assets/img/articles/jt-5-komponen/lhe-transformer.webp" width="300px" alt="">
+              <img src="../assets/img/articles/jt-5-komponen/3w-led-lightbulb.webp" width="300px" alt="">
+            </div>
+
+            <p>Karena hanya 5 komponen utama, rangkaiannya sudah pasti sangat sederhana:</p>
+
+            <div class="article-detailed-image">
+              <img src="../assets/img/articles/jt-5-komponen/skematik-jt-5-komponen.webp" width="800px" alt="">
+            </div>
+
+
+
+            <h3><strong>Bagian 2:</strong> Cara merangkai komponen inverter sederhana</h3>
+
+            <p>
+              Masih bingung dengan skematik di atas? Ini <i>step-by-step</i> cara merangkainya:
+            </p>
+            <ol>
+              <li>Sepasang (2 buah) transistor diletakkan bersebelahan, dan letakkan trafo di dekat 2 transistor tadi.
+              </li>
+              <li>Salah satu kaki trafo dihubungkan ke kaki kolektor transistor NPN, dan kaki trafo yang satunya lagi
+                dihubungkan ke kaki kolektor transistor PNP.</li>
+              <li>Siapkan 2 buah resistor 330 Ohm. Satu resistor dipasang antara kaki kolektor transistor NPN ke basis
+                transistor PNP. Sementara resistor satunya dipasang antara kaki kolektor transistor PNP ke basis
+                transistor NPN.</li>
+              <li>Beban/lampu dihubungkan ke kedua kaki trafo</li>
+              <li>Kutub positif baterai dihubungkan ke kaki emitor transistor PNP, sementara kutub negatifnya
+                dihubungkan ke kaki emitor transistor NPN</li>
+            </ol>
+
+            <div class="article-image">
+              <img src="../assets/img/articles/jt-5-komponen/perakitan-1.webp" width="400px" alt="tiang-lampu">
+              <img src="../assets/img/articles/jt-5-komponen/perakitan-2.webp" width="400px" alt="tiang-lampu">
+              <img src="../assets/img/articles/jt-5-komponen/perakitan-3.webp" width="400px" alt="tiang-lampu">
+            </div>
+
+            <p>
+              <strong>Catatan:</strong>
+            <ul>
+              <li>Urutan kaki transistor berbeda-beda untuk setiap jenisnya. Untuk transistor yang Mas Tukang pakai
+                (TIP41 dan 42),
+                urutan kakinya sesuai dengan gambar di bawah (konfigurasi kaki transistor NPN sama dengan transistor
+                PNP):</li>
+              <div class="article-image">
+                <img src="../assets/img/articles/jt-5-komponen/tr-npn-pinout.webp" width="300px" alt="">
+              </div>
+              <li>Pemasangan kaki trafo, resistor, dan beban lampu boleh terbalik</li>
+            </ul>
+            </p>
+
+            <br>
+
+            <h3><strong>Bagian 3: Pengujian Inverter Sederhana yang Hanya Menggunakan 5 Komponen</strong></h3>
+
+            <p>
+              Saatnya melakukan pengujian untuk inverter yang baru saja kita buat. Ini dia konfigurasi alat waktu Mas
+              Tukang melakukan pengujian:
+            </p>
+            <ul>
+              <li>Baterai yang digunakan adalah 2 buah baterai 18650 berkapasitas 1800 mAh, dan sebuah baterai polymer
+                bekas ponsel berkapasitas 3000 mAh. Ketiganya dihubungkan secara paralel sehingga total kapasitasnya
+                menjadi 6600 mAh.</li>
+              <li>Tegangan input inverter adalah antara 3.7-4.2 Volt sesuai dengan tegangan kerja baterai lithium-ion
+              </li>
+              <li>Pengujian menggunakan lampu LED merk Philips dengan daya 3 watt.</li>
+            </ul>
+            <p>
+              Hasil Pengujian:
+            </p>
+            <ul>
+              <li>Ketika saklar di-ON-kan, lampu langsung menyala namun sedikit lebih redup dibandingkan ketika lampu
+                dipasang di listrik PLN.</li>
+              <li>Hasil pengukuran multimeter menunjukkan konsumsi arus oleh inverter hanya sebesar 0.25 A (250 mA).
+              </li>
+              <li>Ketika tegangan input dinaikkan menjadi 8 volt, lampu menyala terang seperti menggunakan listrik PLN,
+                namun konsumsi arus naik menjadi 0.42 A</li>
+            </ul>
+
+            <div class="article-image">
+              <img src="../assets/img/articles/jt-5-komponen/pengujian-2-jt-5-komponen.webp" width="400px" alt="tiang-lampu">
+              <img src="../assets/img/articles/jt-5-komponen/pengujian-1-jt-5-komponen.webp" width="400px" alt="tiang-lampu">
+              <img src="../assets/img/articles/jt-5-komponen/pengujian-arus-jt-5-komponen.webp" width="400px" alt="tiang-lampu">
+            </div>
+
+            <h3><strong>Bagian 4: Kesimpulan dan Ide Pengembangan untuk Inverter Sederhana</strong></h3>
+            <p>Kesimpulan: <br>
+            <ul>
+              <li>Inverter berhasil menyalakan lampu namun redup. Hal ini wajar karena arus yang dibutuhkan hanya 0.25
+                A, yang jika dikalikan dengan tegangan kerjanya (4.2V) hasilnya adalah 1.05 watt, masih dibawah
+                kebutuhan bawaan lampu (3 watt). Jika ingin lampu menyala terang, tegangan input harus dinaikkan menjadi
+                8 V. Sehingga konsumsi dayanya adalah 8 x 0.42 = 3.36 watt, Sesuai dengan kebutuhan daya lampu.</li>
+              <li>Dengan konsumsi arus 0.25 A dan baterai 6600 mAh, secara teori lampu dapat menyala selama lebih dari
+                24 jam meskipun redup, sehingga inverter ini cocok untuk lampu <i>emergency</i> atau untuk lampu
+                penerangan selama camping</li>
+            </ul>
+            </p>
+            <p>Pengembangan: <br>
+            <ul>
+              <li>Agar lampu menyala dengan terang sama seperti menggunakan listrik PLN, baterai untuk inverter dapat
+                dinaikkan tegangannya dengan cara diberi boost step up module untuk menaikkan tegangan dari 4.2 menjadi
+                8 V, atau dengan merangkai 2 buah baterai secara seri untuk mendapatkan tegangan 8.4V. Tentu penggunaan
+                BMS sangat disarankan ketika merangkai seri baterai lithium.</li>
+              <li>Jika akan dibawa camping, bisa juga dilengkapi dengan membawa panel surya lipat agar dapat mengisi
+                ulang baterai inverter dengan cahaya matahari di siang hari, dan inverter dapat digunakan pada malam
+                harinya.</li>
+            </ul>
+            </p>
+
+
+            <h3><strong>Bagian 5: Budget Untuk Membuat Inverter Sederhana</strong></h3>
+            <p>
+              Inilah budget yang diperlukan untuk pembelian Komponen Inverter di atas:
+            </p>
+            <ul>
+              <li>Box casing plastik: 8000</li>
+              <li>Baterai lithium 18650 10.000 x 3 = 30.000</li>
+              <li>Fitting lampu E27: 2000</li>
+              <li>Modul Charger TP4056: 5000</li>
+              <li>Sepasang transistor TIP41 dan TIP42: 14.000</li>
+              <li>Induktor 10 mH: 10.000</li>
+              <li>Resistor 330 Ohm 2 x 650 = 1300</li>
+            </ul>
+            <p><strong>Total budget yang diperlukan: 70.300 </strong></p>
+            <br>
+            <p>Inverter di atas dapat dibuat dengan biaya yang relatif murah, tidak sampai 100 ribu Rupiah (belum termasuk
+              lampu LED 3 watt yang harga rata-ratanya 13-15 ribu rupiah. )</p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Services Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>2021</span> <strong class="px-1 sitename">Kalcel Media</strong> <span>All Rights Reserved<br></span>
+        </p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a
+          href=“https://themewagon.com>ThemeWagon
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Cara Membuat Lampu Jalan Tenaga Surya Otomatis Tanpa Listrik</title>
+  <meta name="description"
+    content="Pelajari cara membuat lampu jalan tenaga surya otomatis tanpa listrik menggunakan panel surya dan baterai lithium. Ikuti panduan lengkap dari komponen hingga pengujian!">
+  <meta name="keywords"
+    content="lampu jalan tenaga surya, lampu PJU otomatis, panel surya, baterai lithium, cara membuat lampu jalan, hemat energi, lampu otomatis">
+  <meta name="author" content="Your Name">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="../assets/img/logo.png" alt="Mas Tukang logo">
+        <!-- <h1 class="sitename">Kelly</h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../articles.html">Artikel</a></li>
+          <li><a href="../products.html">Produk</a></li>
+          <li><a href="../channels.html">Channel</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-search">
+        <a href="#" class="search-icon"><i class="bi bi-search"></i></a>
+        <div class="search-box" id="search-box" style="display: none;">
+          <input type="text" id="search-input" placeholder="Cari artikel..." />
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Articles Section -->
+    <section id="articles" class="articles section">
+
+      <div class="container">
+        <div class="article-body">
+          <article>
+            <div class="article-title">
+              <h2>Cara Membuat Lampu Jalan Tenaga Surya Otomatis Tanpa Listrik</h2>
+            </div>
+
+            <div class="article-title-image">
+              <img src="../assets/img/articles/pju-tenaga-surya/solar-light-title-image.webp" alt="tambal-ban-tiptop">
+            </div>
+
+            <p>
+              Mas Tukang tinggal di sebuah pedesaan yang masih asri dan hijau di pagi, siang, dan sore hari. Di malam
+              hari, semua berubah gelap karena tidak adanya penerangan dari lampu kota, termasuk di jalan depan rumah
+              Mas Tukang. Meskipun sudah memasang lampu jalan, Mas Tukang sering lupa untuk menyalakannya ketika pergi
+              ke luar rumah di siang hari dan akan pulang malam hari. Akibatnya, ketika pulang dan sampai di depan
+              rumah, suasananya gelap gulita.
+            </p>
+            <br>
+            <p>
+              Karena inilah, Mas Tukang membuat lampu jalan yang bisa menyala otomatis ketika matahari mulai terbenam,
+              dan mati otomatis ketika matahari terbit. Kebetulan, di gudang Mas Tukang ada beberapa lembar panel surya
+              kecil dan baterai lithium yang <i>nganggur</i> tidak terpakai, sehingga Mas Tukang akan membuat lampu
+              jalan bertenaga baterai lengkap dengan panel surya untuk mengisi baterai ketika siang hari. Panel surya
+              ini juga merangkap sebagai sensor cahaya untuk menentukan kapan lampu akan menyala dan mati secara
+              otomatis.
+            </p>
+
+            <br>
+
+            <h3><strong>Bagian 1:</strong> Komponen, skema rangkaian, dan Cara Kerja Rangkaian Lampu PJU Tenaga Surya
+            </h3>
+
+            <p>
+              List komponen yang dibutuhkan:
+            </p>
+
+            <ul>
+              <li><strong>1 buah transistor NPN.</strong> (contoh: BD139, D882, S8050)</li>
+              <li><strong>1 buah MOSFET N-Channel.</strong> (contoh: IRF540N, IRFZ44N, IRF3205). MOSFET ini akan
+                menghandel arus sesuai lampu yang dipakai, sehingga pilihlah MOSFET yang kemampuan handel arusnya diatas
+                arus yang dibutuhkan lampu. </li>
+              <li><strong>1 buah Step Down Converter.</strong> Mas Tukang menggunakan XL4015 5 Ampere. Output dari step down di set ke 4.2 V</li>
+              <li><strong>1 buah Dioda 5 Ampere</strong></li>
+              <li><strong>1 Buah Mata LED 1 Watt</strong>, atau bisa menggunakan lampu bohlam LED 3 watt rumahan yang
+                dihubungkan ke rangkaian Joule Thief Inverter.</li>
+              <li><strong>1 buah resistor 1K Ohm</strong></li>
+              <li><strong>1 buah resistor 100K Ohm</strong></li>
+              <li><strong>Panel surya.</strong> Mas Tukang menggunakan 3 buah panel surya 10 wp tipe Monocrystalline.
+              </li>
+              <li><strong>Baterai lithium.</strong> Bisa lithium-ion atau lithium polymer Minimal 10.000 mAh</li>
+              <li><strong>1 Batang Baja Ringan</strong> untuk tiang lampu</li>
+            </ul>
+
+            <div class="article-image">
+              <img src="../assets/img/articles/pju-tenaga-surya/mata-led.webp" width="300px" alt="">
+              <img src="../assets/img/articles/pju-tenaga-surya/buck-step-down.webp" width="300px" alt="">
+              <img src="../assets/img/articles/pju-tenaga-surya/6a-diode.webp" width="300px" alt="">
+              <img src="../assets/img/articles/pju-tenaga-surya/baterai-li-polymer.webp" width="300px" alt="">
+              <img src="../assets/img/articles/pju-tenaga-surya/mosfet.webp" width="300px" alt="">
+              <img src="../assets/img/articles/pju-tenaga-surya/panel-surya.webp" width="300px" alt="">
+              <img src="../assets/img/articles/pju-tenaga-surya/resistor.webp" width="300px" alt="">
+              <img src="../assets/img/articles/pju-tenaga-surya/bd139-npn-transistor.webp" width="300px" alt="">
+            </div>
+
+            <p>Skema rangkaiannya bisa dilihat pada gambar di bawah ini:</p>
+
+            <div class="article-detailed-image">
+              <img src="../assets/img/articles/pju-tenaga-surya/skematik.webp" width="800px" alt="">
+            </div>
+
+            <p>
+              Cara kerja rangkaian ini sangat sederhana. Ketika malam hari, tidak ada suplai arus dari panel surya yang mengalir ke step down converter dan ke basis transistor Q2, menyebabkan Q2
+              dalam kondisi OFF. Ketika Q2 OFF, kaki Gate pada MOSFET Q1 akan mendapat arus dari kutub positif baterai
+              melalui resistor 100K Ohm, sehingga Q1 akan ON dan menyebabkan lampu menyala. Ketika siang hari, panel
+              surya menyuplai arus ke step down converter hingga ke basis transistor Q2 melalui resistor 1K Ohm sehingga
+              Q2 dalam kondisi ON. Q2 yang dalam kondisi ON akan menghubungkan kaki Gate MOSFET Q1 langsung ke kutub
+              negatif baterai (ground) tanpa melalui resistor, menyebabkan Q1 OFF sehingga lampu pun mati.
+            </p>
+
+            <br>
+
+            <h3><strong>Bagian 2:</strong> Pemasangan Komponen pada Tiang Lampu Jalan</h3>
+
+            <p>Mas Tukang menggunakan baja ringan sebagai tiang lampu. Panel Surya dipasang di bagian paling atas tiang,
+              miring 20º ke arah utara.</p>
+
+            <div class="article-image">
+              <img src="../assets/img/articles/pju-tenaga-surya/panel-surya-terpasang.webp" width="400px"
+                alt="tiang-lampu">
+            </div>
+
+            <p>Papan rangkaian yang Mas Tukang buat berukuran kecil sehingga bisa masuk ke dalam lekukan tiang baja
+              ringan. Papan rangkaian langsung dibaut ke tiang baja ringan menggunakan <i>spacer</i> kuningan. Untuk
+              perlindungan waktu cuaca hujan, Mas Tukang menggunakan cara simpel, yaitu ditutupi dengan kaleng bekas
+              sereal yang diletakkan terbalik.</p>
+
+            <div class="article-image">
+              <img src="../assets/img/articles/pju-tenaga-surya/papan-rangkaian-terpasang-2.webp" width="300px"
+                alt="papan-rangkaian">
+              <img src="../assets/img/articles/pju-tenaga-surya/papan-rangkaian-terpasang-1.webp" width="300px"
+                alt="papan-rangkaian">
+              <img src="../assets/img/articles/pju-tenaga-surya/kaleng-tutup.webp" width="300px"
+                alt="pelindung-papan-rangkaian">
+
+            </div>
+
+            <h3><strong>Bagian 3: Pengujian Lampu Jalan Tenaga Surya</strong></h3>
+
+            <p>
+              Setelah semua komponen terpasang pada tiang, sekarang saatnya untuk pengujian. Terukur panel surya mampu
+              membangkitkan arus sebesar 1.6 Ampere ketika dipapar sinar matahari, pada kondisi pengecasan maksimal
+              (tegangan baterai di 3.4 V - penuh di 4.2 V). Lampu selalu mati otomatis pada sekitar jam 17:50 - 18:00,
+              berdekatan dengan Adzan Maghrib. Pada waktu lampu menyala otomatis, tegangan baterai terukur di tegangan
+              penuh, yaitu 4.2V. Sedangkan pada waktu lampu mati otomatis, tegangan baterai terukur di 3.87V. Pada sore
+              harinya saat lampu menyala otomatis, tegangan baterai terukur kembali pada tegangan penuh, dan pada
+              keesokan paginya terukur 3.88V. Dari seminggu pengukuran diperoleh hasil yang kurang lebih mendekati
+              dengan hasil di atas.
+            </p>
+
+            <div class="article-image">
+              <img src="../assets/img/articles/pju-tenaga-surya/pengujian-nyala-1.webp" width="400px"
+                alt="lampu-nyala-1">
+              <img src="../assets/img/articles/pju-tenaga-surya/pengujian-nyala-2.webp" width="400px"
+                alt="lampu-nyala-2">
+            </div>
+
+            <h3><strong>Bagian 4: Kesimpulan dan Ide Pengembangan Lampu PJU Tenaga Surya</strong></h3>
+
+            <p>
+              Lampu PJU ini berhasil dengan stabil menyala dan mati otomatis setelah dipasang di luar ruangan dan
+              terpapar sinar matahari. Karena waktu pengujian sedang musim kemarau, sinar matahari bersinar sangat terik
+              setiap harinya. Jadi dapat dipastikan panel surya mendapat cukup cahaya sepanjang hari dengan waktu
+              penyinaran selama 8 jam dan waktu penyinaran maksimal (puncak matahari terik) selama 2.5 jam. Sampai
+              artikel ini ditulis, belum dilakukan pengujian di musim hujan dimana sinar matahari sangat minim karena
+              pada musim hujan sinar matahari terhalang awan dan akan mempengaruhi arus yang dibangkitkan panel surya.
+            </p>
+            <br>
+            <p>
+              Lampu PJU ini masih bisa dikembangkan dengan menambahkan sensor arus pada input dan output baterai,
+              sehingga energi yang masuk dan keluar baterai bisa terukur. Dengan demikian, bisa ditambahkan rangkaian
+              pengatur beban seperti PWM yang dikontrol oleh arduino dengan input dari sensor arus tersebut sehingga
+              kecerahan lampu bisa disesuaikan dengan berapa banyak energi yang didapat dari panel surya, untuk menjaga
+              lampu selalu menyala hingga pagi hari tanpa kehabisan baterai, meskipun dengan kecerahan yang berbeda-beda
+              tergantung energi yang tersimpan di dalam baterai.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Services Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>2021</span> <strong class="px-1 sitename">Kalcel Media</strong> <span>All Rights Reserved<br></span>
+        </p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a
+          href=“https://themewagon.com>ThemeWagon
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+
+</body>
+
+</html>
